@@ -101,12 +101,17 @@
 						<li> - Symfony Twig Support</li>
 					</ul>				
 
-					The Core Feature is mandatory. The Twig Support Feature is only needed if you use the <a href="http://www.twig-project.org/">Twig templating engine</a>. If you need Twig Support, install the separate <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig plugin</a> first.
+					The Core Feature is mandatory. The Twig Support Feature is only needed if you use the <a href="http://www.twig-project.org/">Twig templating engine</a>. If you need Twig Support, install the separate <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig plugin</a>.
 					</p>
 
 					<h2>Usage</h2>			
 
-					<p>To make your existing PHP projects Symfony aware, add the SymfonyNature by right-clicking on the project in the <span class="eclipsehint">PHP explorer -> Symfony -> Add/Remove Symfony Nature.</span> This will add the Symfony <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_core_resources_natures.html">project nature</a> and trigger the indexing mechanism of DLTK/PDT/Symfony (see the status bar at the bottom). <br/><br/>That's it, you're ready to go.</p>
+					<p>To make your existing PHP projects Symfony aware, add the SymfonyNature by right-clicking on the project in the <span class="eclipsehint">PHP explorer -> Symfony -> Add/Remove Symfony Nature.</span> This will add the Symfony <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_core_resources_natures.html">project nature</a> and trigger the indexing mechanism of DLTK/PDT/Symfony (see the status bar at the bottom). <br/><br/></p>
+					
+					<p>The plugin indexes all PHP, XML and YML files which are on the PHP buildpath. To ensure it can find all relevant sources, your buildpath should look like this ( screenshot from the Symfony Standard Edition):</p>
+					<a class="lightbox" href="images/screenshots/buildpath.png"><img src="images/screenshots/buildpath_thumb.png"></img></a>
+					<p>Note that the <span class="code">app/cache</span> and <span class="code">vendor/...GeneratorBundle.../skeleton</span> folders are excluded to avoid build errors(skeleton) and duplicate codeassist entries (cache)</p>
+					
 			</div>
 			
 			<div id="tabs-3" class="tabdiv">
