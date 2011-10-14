@@ -302,6 +302,7 @@ h2.answer {
 .tabdiv {
 	
 	margin-top: 15px;
+
 	
 }
 
@@ -327,4 +328,16 @@ p.info {
 	
 	color: #7D112C;
   font-size: 13px;
+}
+
+.centered {
+	
+	width: 30%;
+	margin: auto;
+}
+
+.warning {
+	
+	color: red;
+	font-weight: bolder;	
 }

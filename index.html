@@ -91,21 +91,45 @@
 				<h2>Installation via Updatesite</h2>			
 				<p>The plugin can be installed via the regular <a href="http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm">update site mechanism.</a></p>
 				<p>The update site is located at<br/><br/> <span id="updatelink"><a href="http://pulse00.github.com/updatesite/">http://pulse00.github.com/updatesite/</a></span></p>
-				<br/><p>After adding the updatesite to your eclipse installation, you will see 2 Symfony features:				
-					<ul>					
-						<li> - Symfony Core Feature</li>
-						<li> - Symfony Twig Support</li>
-					</ul>				
+				<br/><p>After adding the updatesite to your eclipse installation, you will see 3 categories:				
 
-					The Core Feature is mandatory. The Twig Support Feature is only needed if you use the <a href="http://www.twig-project.org/">Twig templating engine</a>. If you need Twig Support, install the separate <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig plugin</a>.
+				
+				</p>	
+				<ul>
+          <li>org.eclipse.php</li>
+          <li>Symfony</li>
+          <li>Twig</li>            
+        </ul>
+        
+				<div class="centered">
+				  
+					<a class="lightbox" href="images/screenshots/install_window.png"><img src="images/screenshots/install_window_thumb.png"></img></a>
+					</div>
+				<p>The Symfony Core Feature is mandatory. The Twig Support Feature is only needed if you use the <a href="http://www.twig-project.org/">Twig templating engine</a>. If you need Twig Support, install the separate <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig plugin</a>.
 					</p>
+					
+					
+					<h2>Updating</h2>
+					
+					  <p>When updating the plugin, eclipse will contact all available updatesites, which also includes the built-in updatesite hosting the current stable PDT plugin. This plugin will be shown in the "Available Updates" dialog:</p>
+					  
+    				<div class="centered">
+    					<a class="lightbox" href="images/screenshots/update_check.png"><img src="images/screenshots/update_check_thumb.png"></img></a>
+    				</div>
+    				
+    				<p><span class="warning">Do not install this version of PDT, as it will break the symfony plugin!</span> The development versions of the PDT plugin do not contain dashes or alphanumeric characters, this way you can make sure during an update that you're updating PDT from the correct site.</p>
+					  
 
 					<h2>Usage</h2>			
 
 					<p>To make your existing PHP projects Symfony aware, add the SymfonyNature by right-clicking on the project in the <span class="eclipsehint">PHP explorer -> Symfony -> Add/Remove Symfony Nature.</span> This will add the Symfony <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_core_resources_natures.html">project nature</a> and trigger the indexing mechanism of DLTK/PDT/Symfony (see the status bar at the bottom). <br/><br/></p>
 					
+					<p>For new Symfony projects, you can simply use the "New Symfony Project" wizard which sets up the project correctly.</p>
 					<p>The plugin indexes all PHP, XML and YML files which are on the PHP buildpath. To ensure it can find all relevant sources, your buildpath should look like this ( screenshot from the Symfony Standard Edition):</p>
+					
+					<div class="centered">
 					<a class="lightbox" href="images/screenshots/buildpath.png"><img src="images/screenshots/buildpath_thumb.png"></img></a>
+					</div>
 					<p>Note that the <span class="code">app/cache</span> and <span class="code">vendor/...GeneratorBundle.../skeleton</span> folders are excluded to avoid build errors(skeleton) and duplicate codeassist entries (cache)</p>
 					
 			</div>
@@ -266,7 +290,7 @@
 							</p>
 							<p>File links in Symfony exception pages should now open / focus eclipse and open the corresponding file.</p>
 							
-							<p>The source of the symfony2eclipse app is available in the <a href="https://github.com/pulse00/Symfony-2-Eclipse-Plugin/tree/master/org.eclipse.symfony.ui/launcher/osx/symfony2eclipse.app/Contents">github repo.</a> It's a simple applescript registering a <span class="code">symfony://</span> URL scheme with OSX via the info.plist file of the applescript-bundle. When the browser requests that URL scheme, the script handles it and opens Eclipse.</p>
+							<p>The source of the symfony2eclipse app is available in the <a href="https://github.com/pulse00/Symfony-2-Eclipse-Plugin/tree/master/com.dubture.symfony.ui/launcher/osx/symfony2eclipse.app/Contents">github repo.</a> It's a simple applescript registering a <span class="code">symfony://</span> URL scheme with OSX via the info.plist file of the applescript-bundle. When the browser requests that URL scheme, the script handles it and opens Eclipse.</p>
 							<p class="info">Any hints (or even better <a href="http://help.github.com/pull-requests/">pull requests</a>) how to implement this for Windows and Linux are greatly appreciated!</p>
 						</ul>
 						
@@ -308,9 +332,9 @@
 					<h2 class="answer">Eclipse can be started with various debugging options. This can be turned on/off for each installed plugin independently. To debug the symfony plugin, create a file called <span class="code">.options</span> in your Eclipse installation folder. The file should contain the following lines:
 						
 						<p class="code">							
-							org.eclipse.symfony.core/debug=true<br/>
-							org.eclipse.symfony.index/debug=true<br/>
-							org.eclipse.symfony.ui/debug=true<br/>
+							com.dubture.symfony.core/debug=true<br/>
+							com.dubture.symfony.index/debug=true<br/>
+							com.dubture.symfony.ui/debug=true<br/>
 						</p>
 						
 						Then restart eclipse from the commandline with these flags: <span class="code">eclipse -debug .options</span>						
