@@ -91,22 +91,18 @@
 				<h2>Installation via Updatesite</h2>			
 				<p>The plugin can be installed via the regular <a href="http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm">update site mechanism.</a></p>
 				<p>The update site is located at<br/><br/> <span id="updatelink"><a href="http://pulse00.github.com/updatesite/">http://pulse00.github.com/updatesite/</a></span></p>
-				<br/><p>After adding the updatesite to your eclipse installation, you will see 3 categories:				
+				<br/><p>After adding the updatesite to your eclipse installation, you will see 4 categories:				
 
 				
 				</p>	
-				<ul>
-          <li>org.eclipse.php</li>
-          <li>Symfony</li>
-          <li>Twig</li>            
-        </ul>
         
 				<div class="centered">
 				  
 					<a class="lightbox" href="images/screenshots/install_window.png"><img src="images/screenshots/install_window_thumb.png"></img></a>
 					</div>
-				<p>The Symfony Core Feature is mandatory. The Twig Support Feature is only needed if you use the <a href="http://www.twig-project.org/">Twig templating engine</a>. If you need Twig Support, install the separate <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig plugin</a>.
+				<p>The Symfony Core Feature is mandatory. The Twig Support Feature is only needed if you use the <a href="http://www.twig-project.org/">Twig templating engine</a>. If you need Twig Support, install the separate <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig plugin</a>.				  
 					</p>
+					<p>The Doctrine Feature is optional but provides some useful stuff if you're using the <a href="http://www.doctrine-project.org/">Doctrine ORM/ODM</a> like indexing of Entities/Documents and Repository classes. It also provides "Generate Getter/Setter" functionality for class fields.</p>
 					
 					
 					<h2>Updating</h2>
@@ -189,6 +185,30 @@
 						<div class="multiShot centered">				
 							<a href="images/screenshots/annotationcompletion.png"><img src="images/screenshots/annotationcompletion_thumb.png"></img></a>
 							<a href="images/screenshots/annotationinjection.png"><img src="images/screenshots/annotationinjection_thumb.png"></img></a>
+						</div>
+						
+						
+						<h3 id="topfeature">Doctrine Entities/Repository classes</h3>
+												
+						<p>Repository retrieval will aid with some hints for Bundles and Entities:</p>
+
+						<div class="multiShot centered">				
+							<a href="images/screenshots/repo_bundle_assist.png"><img src="images/screenshots/repo_bundle_assist_thumb.png"></img></a>
+							<a href="images/screenshots/repo_entity_assist.png"><img src="images/screenshots/repo_entity_assist_thumb.png"></img></a>
+						</div>
+						
+						<p>Repository classes can be fully resolved by the type inference engine:</p>
+						
+						<div class="centered">				
+							<a class ="lightbox" href="images/screenshots/repo_type_inference.png"><img src="images/screenshots/repo_type_inference_thumb.png"></img></a>
+						</div>						
+						
+						<h3 id="topfeature">Translations</h3>						
+						
+						<p>If you're inside a translation context, you'll get a list of available translation units including the translation for every available language:</p>
+
+						<div class="centered">				
+							<a class ="lightbox" href="images/screenshots/translations.png"><img src="images/screenshots/translations_thumb.png"></img></a>
 						</div>
 
 						<h3>Template variables</h3>
