@@ -63,18 +63,22 @@
 			<div id="tabs-1" class="tabdiv">
 		
 			<h2>Symfony</h2>
-			<p><a href="http://symfony.com">Symfony</a> is a popular PHP Web Development framework. This eclipse plugin aims to provide support for framework specific idioms. It is built on top of the <a href="http://www.eclipse.org/dltk/">Dynamic Languages Toolkit</a> and the <a href="http://www.eclipse.org/pdt/">PHP Development Tools.</a> and adds some useful features which hopefully save you some time like:				
+			<p><a href="http://symfony.com">Symfony</a> is a popular PHP Web Development framework and a set of standalone components available as <a href="http://symfony.com/components">PHP libraries</a>. This eclipse plugin aims to provide support for framework specific idioms. It is built on top of the <a href="http://www.eclipse.org/dltk/">Dynamic Languages Toolkit</a> and the <a href="http://www.eclipse.org/pdt/">PHP Development Tools</a> and adds some useful features which hopefully save you some time like:				
 				<ul>
-					<li> - Codeassist for elements specific to the Symfony framework, like <a href="http://symfony.com/doc/current/book/service_container.html">services</a>, <a href="http://symfony.com/doc/current/book/routing.html">routes</a> and <a href="http://symfony.com/doc/current/book/templating.html">template paths</a></li>					
+					<li> - Codeassist for elements specific to the Symfony framework, like <a href="http://symfony.com/doc/current/book/service_container.html">services</a>, <a href="http://symfony.com/doc/current/book/routing.html">routes</a> and <a href="http://symfony.com/doc/current/book/templating.html">template paths</a>, <a href="http://symfony.com/doc/current/book/doctrine.html#creating-an-entity-class">entities</a> and <a href="http://symfony.com/doc/current/book/translation.html">translations</a>.</li>					
 					<li> - <a href="http://symfony.com/doc/2.0/bundles/SensioFrameworkExtraBundle/index.html">Annotation</a> support</li>
-					<li> - <a href="http://www.twig-project.org/">Twig</a> support</li>
+					<li> - <a href="http://twig.sensiolabs.org//">Twig</a> support</li>
 				</ul>
 
 				</p>
 				
 			<h2>Twig</h2>
 			
-			<p><a href="http://twig-project.com">Twig</a> is a templating language for PHP. Symfony has built in support for Twig, and so does the Symfony Eclipse Plugin. You'll need to install the standalone <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig Plugin</a> first though.</p>
+			<p><a href="http://twig.sensiolabs.org/">Twig</a> is a templating language for PHP. Symfony has built in support for Twig, and so does the Symfony Eclipse Plugin.</p>
+			
+			<h2>Doctrine</h2>
+			
+			<p><a href="http://www.doctrine-project.org/">Doctrine</a>  is a set of PHP libraries primarily focused on providing persistence services and related functionality. It comes bundled with the Symfony Standard-Edition as the default <a href="http://en.wikipedia.org/wiki/Object-Relational_Mapping">ORM</a>. The Symfony Eclipse Plugin also provides Doctrine support.</p>
 
 			<h2>Yaml</h2>
 			
@@ -87,7 +91,7 @@
 			
 			<div id="tabs-2" class="tabdiv">
 				<h2>Prerequisites</h2>
-				<p>Currently a development build of the PHP Development Tools (PDT) is required to run the symfony/twig plugins. This development build is available in the updatesite of this plugin (see below).</p>			
+				<p>Currently a development build of the PHP Development Tools (PDT) is required to run the Symfony plugin. This development build is available in the updatesite of this plugin (see below).</p>			
 				<h2>Installation via Updatesite</h2>			
 				<p>The plugin can be installed via the regular <a href="http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm">update site mechanism.</a></p>
 				<p>The update site is located at<br/><br/> <span id="updatelink"><a href="http://pulse00.github.com/updatesite/">http://pulse00.github.com/updatesite/</a></span></p>
@@ -100,7 +104,7 @@
 				  
 					<a class="lightbox" href="images/screenshots/install_window.png"><img src="images/screenshots/install_window_thumb.png"></img></a>
 					</div>
-				<p>The Symfony Core Feature is mandatory. The Twig Support Feature is only needed if you use the <a href="http://www.twig-project.org/">Twig templating engine</a>. If you need Twig Support, install the separate <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig plugin</a>.				  
+				<p>The Symfony Core Feature is mandatory. The Twig Support Feature is only needed if you use the <a href="http://twig.sensiolabs.org/">Twig templating engine</a>. If you need Twig Support, install the separate <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig plugin</a>.				  
 					</p>
 					<p>The Doctrine Feature is optional but provides some useful stuff if you're using the <a href="http://www.doctrine-project.org/">Doctrine ORM/ODM</a> like indexing of Entities/Documents and Repository classes. It also provides "Generate Getter/Setter" functionality for class fields.</p>
 					
