@@ -95,7 +95,7 @@
 				<h2>Installation via Updatesite</h2>			
 				<p>The plugin can be installed via the regular <a href="http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm">update site mechanism.</a></p>
 				<p>The update site is located at<br/><br/> <span id="updatelink"><a href="http://pulse00.github.com/updatesite/">http://pulse00.github.com/updatesite/</a></span></p>
-				<br/><p>After adding the updatesite to your eclipse installation, you will see 4 categories:				
+				<br/><p>After adding the updatesite to your eclipse installation, you will see 2 categories:				
 
 				
 				</p>	
@@ -104,10 +104,9 @@
 				  
 					<a class="lightbox" href="images/screenshots/install_window.png"><img src="images/screenshots/install_window_thumb.png"></img></a>
 					</div>
-				<p>The Symfony Core Feature is mandatory. The Twig Support Feature is only needed if you use the <a href="http://twig.sensiolabs.org/">Twig templating engine</a>. If you need Twig Support, install the separate <a href="https://github.com/pulse00/Twig-Eclipse-Plugin">Twig plugin</a>.				  
+				<p>"PHP Development Tools" is the current development version of PDT. This is required at the moment, the Symfony Plugin will not work with the current stable PDT version.				  
 					</p>
-					<p>The Doctrine Feature is optional but provides some useful stuff if you're using the <a href="http://www.doctrine-project.org/">Doctrine ORM/ODM</a> like indexing of Entities/Documents and Repository classes. It also provides "Generate Getter/Setter" functionality for class fields.</p>
-					
+					<p>The Symfony Feature provides all necessary tools to fully integrate Symfony support into PDT/Eclipse.</p>
 					
 					<h2>Updating</h2>
 					
@@ -283,19 +282,22 @@
 					<div id="wizardsf" class="featurediv">
 												
 						<h2>New Symfony Project wizard</h2>	
-						<div class="multiShot">				
+						<div class="multiShot centered">				
 						  <a href="images/screenshots/new_project_wizard.png"><img src="images/screenshots/new_project_wizard_thumb.png"></img></a>
 							<a href="images/screenshots/new_project_finish.png"><img src="images/screenshots/new_project_finish_thumb.png"></img></a>
 						</div>
 						
 						<br/>
 						<h2>New PHP class wizard</h2>	
-						<div class="multiShot">				
-						  <a href="images/screenshots/new_class.png"><img src="images/screenshots/new_class_thumb.png"></img></a>
-							<a href="images/screenshots/new_class_dialog.png"><img src="images/screenshots/new_class_dialog_thumb.png"></img></a>
-							<a href="images/screenshots/new_class_finish.png"><img src="images/screenshots/new_class_finish_thumb.png"></img></a>								
+						<div class="multiShot centered">				
+							<a href="images/screenshots/new_class_dialog.png"><img src="images/screenshots/new_class_dialog_thumb.png"></img></a>								
 						</div>
-												
+						
+						<br/>
+						<h2>Getter/Setter generation</h2>	
+						<div class="multiShot centered">				
+							<a href="images/screenshots/getter_setter.png"><img src="images/screenshots/getter_setter_thumb.png"></img></a>								
+						</div>																		
 					</div>
 					
 					<div id="debugsf" class="featurediv">

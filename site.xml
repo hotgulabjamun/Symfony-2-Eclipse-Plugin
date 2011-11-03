@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.dubture.symfony.allinone_1.0.0.201111030212.jar" id="com.dubture.symfony.allinone" version="1.0.0.201111030212">
+   <feature url="features/com.dubture.symfony.allinone_1.0.40.201111031640.jar" id="com.dubture.symfony.allinone" version="1.0.40.201111031640">
       <category name="Symfony"/>
    </feature>
-   <feature url="features/org.eclipse.php_3.0.0.201111030212.jar" id="org.eclipse.php" version="3.0.0.201111030212">
+   <feature url="features/org.eclipse.php_3.0.0.201111031640.jar" id="org.eclipse.php" version="3.0.0.201111031640">
       <category name="PHP Development Tools"/>
    </feature>
-   <category-def name="Symfony" label="Symfony"/>
+   <category-def name="Symfony" label="Symfony">
+      <description>
+         Symfony feature set.
+      </description>
+   </category-def>
    <category-def name="PHP Development Tools" label="PHP Development Tools"/>
 </site>
