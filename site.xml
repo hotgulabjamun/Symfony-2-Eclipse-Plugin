@@ -3,7 +3,7 @@
    <feature url="features/org.eclipse.php_3.0.0.201111031640.jar" id="org.eclipse.php" version="3.0.0.201111031640">
       <category name="PHP Development Tools"/>
    </feature>
-   <feature url="features/com.dubture.symfony.allinone_1.0.43.201111141502.jar" id="com.dubture.symfony.allinone" version="1.0.43.201111141502">
+   <feature url="features/com.dubture.symfony.allinone_1.0.44.201111141645.jar" id="com.dubture.symfony.allinone" version="1.0.44.201111141645">
       <category name="Symfony"/>
    </feature>
    <category-def name="Symfony" label="Symfony">
