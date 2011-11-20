@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.php_3.0.0.201111031640.jar" id="org.eclipse.php" version="3.0.0.201111031640">
+   <feature url="features/com.dubture.symfony.feature_1.0.45.201111201826.jar" id="com.dubture.symfony.feature" version="1.0.45.201111201826">
+      <category name="Symfony"/>
+   </feature>
+   <feature url="features/org.dadacoalition.yedit_0.0.11.jar" id="org.dadacoalition.yedit" version="0.0.11">
+      <category name="YEdit"/>
+   </feature>
+   <feature url="features/org.eclipse.php_3.0.0.201111201826.jar" id="org.eclipse.php" version="3.0.0.201111201826">
       <category name="PHP Development Tools"/>
    </feature>
-   <feature url="features/com.dubture.symfony.allinone_1.0.44.201111141645.jar" id="com.dubture.symfony.allinone" version="1.0.44.201111141645">
-      <category name="Symfony"/>
+   <feature url="features/com.dubture.pdt.feature_1.0.2.201111201826.jar" id="com.dubture.pdt.feature" version="1.0.2.201111201826">
+      <category name="PDT Extensions"/>
    </feature>
    <category-def name="Symfony" label="Symfony">
       <description>
          Symfony feature set.
       </description>
    </category-def>
+   <category-def name="YEdit" label="YEdit">
+      <description>
+         YEdit is an editor for editing YAML files.
+      </description>
+   </category-def>
    <category-def name="PHP Development Tools" label="PHP Development Tools"/>
+   <category-def name="PDT Extensions" label="PDT Extensions">
+      <description>
+         The PDT Extensions Plugin provides some additional features for the Eclipse PHP Development Tools. Visit http://pulse00.github.com/PDT-Extensions for details.
+      </description>
+   </category-def>
 </site>
