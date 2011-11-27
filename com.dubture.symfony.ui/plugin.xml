@@ -22,6 +22,13 @@
                enablesFor="1"
                id="com.dubture.symfony.ui.newAction"
                label="%action.label"
+               menubarPath="com.dubture.symfony.ui.menu1">
+         </action>
+         <action
+               class="com.dubture.symfony.ui.actions.RunConsoleAction"
+               enablesFor="1"
+               id="com.dubture.symfony.ui.action1"
+               label="Run console"
                menubarPath="com.dubture.symfony.ui.menu1/project">
          </action>
       </objectContribution>
