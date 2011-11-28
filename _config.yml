@@ -1,0 +1,4 @@
+exclude:
+  - artifacts.jar
+  - contents.jar
+  

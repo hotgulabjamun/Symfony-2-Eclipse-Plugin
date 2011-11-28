@@ -1,0 +1,49 @@
+---
+layout: default
+title: Symfony2 Eclipse Plugin - Installation
+---
+
+<div id="tabs-2" class="tabdiv">
+	<h2>Prerequisites</h2>
+	<p>Currently a development build of the PHP Development Tools (PDT) is required to run the Symfony plugin. This development build is available in the updatesite of this plugin (see below).</p>			
+	<h2>Installation via Updatesite</h2>			
+	<p>The plugin can be installed via the regular <a href="http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-124.htm">update site mechanism.</a></p>
+	<p>The update site is located at<br/><br/> <span id="updatelink"><a href="http://pulse00.github.com/Symfony-2-Eclipse-Plugin/">http://pulse00.github.com/Symfony-2-Eclipse-Plugin/</a></span></p>
+	<br/><p>After adding the updatesite to your eclipse installation, you will see 2 categories:				
+
+	
+	</p>	
+     
+	<div class="centered">
+	  
+		<a class="lightbox" href="images/screenshots/install_window_2.png"><img src="images/screenshots/install_window_2_thumb.png"></img></a>
+		</div>
+	<p>"PHP Development Tools" is the current development version of PDT. This is required at the moment, the Symfony Plugin will not work with the current stable PDT version.				  
+		</p>
+		<p>The Symfony Feature provides all necessary tools to fully integrate Symfony support into PDT/Eclipse.</p>
+		
+		<h2>Updating</h2>
+		
+		  <p>When updating the plugin, eclipse will contact all available updatesites, which also includes the built-in updatesite hosting the current stable PDT plugin. This plugin will be shown in the "Available Updates" dialog:</p>
+		  
+ 				<div class="centered">
+ 					<a class="lightbox" href="images/screenshots/update_check.png"><img src="images/screenshots/update_check_thumb.png"></img></a>
+ 				</div>
+ 				
+ 				<p><span class="warning">Do not install this version of PDT, as it will break the symfony plugin!</span> The development versions of the PDT plugin do not contain dashes or alphanumeric characters, this way you can make sure during an update that you're updating PDT from the correct site.</p>
+		  
+
+		<h2>Usage</h2>			
+
+		<p>To make your existing PHP projects Symfony aware, add the SymfonyNature by right-clicking on the project in the <span class="eclipsehint">PHP explorer -> Symfony -> Add/Remove Symfony Nature.</span> This will add the Symfony <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_core_resources_natures.html">project nature</a> and trigger the indexing mechanism of DLTK/PDT/Symfony (see the status bar at the bottom). <br/><br/></p>
+		
+		<p>For new Symfony projects, you can simply use the "New Symfony Project" wizard which sets up the project correctly.</p>
+		<p>The plugin indexes all PHP, XML and YML files which are on the PHP buildpath. To ensure it can find all relevant sources, your buildpath should look like this ( screenshot from the Symfony Standard Edition):</p>
+		
+		<div class="centered">
+		<a class="lightbox" href="images/screenshots/buildpath.png"><img src="images/screenshots/buildpath_thumb.png"></img></a>
+		</div>
+		<p>Note that the <span class="code">app/cache</span> and <span class="code">vendor/...GeneratorBundle.../skeleton</span> folders are excluded to avoid build errors(skeleton) and duplicate codeassist entries (cache)</p>
+		
+</div>
+			

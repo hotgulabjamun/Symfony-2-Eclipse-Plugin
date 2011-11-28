@@ -1,0 +1,60 @@
+---
+layout: default
+title: Symfony2 Eclipse Plugin - FAQ
+---
+
+			
+<div id="tabs-4" class="tabdiv">
+  
+	<div class="faq">					
+		<h2 class="question">When will the plugin work with the stable PDT version?</h2>
+		<h2 class="answer">According to the <a href="http://dev.eclipse.org/mhonarc/lists/pdt-dev/msg02006.html">PDT developers mailing-list</a> the next PDT maintenance release will be shipped in March 2012. This release will contain the commits required by the Symfony plugin. Until then you need to use the build provided by this updatesite.</h2>					
+	</div>
+  
+	
+	<div class="faq">					
+		<h2 class="question">How do i know a PHP project is symfony-aware?</h2>
+		<h2 class="answer">Check for a "Symfony Builder" in the projects builders - <span class="eclipsehint">project -> Properties -> Builders</span>. If it's not there, run the "Add/Remove Symfony Nature" (right-click on the project in the <span class="eclipsehint">package explorer -> Symfony -> Add/Remove Symfony Nature</span>).</h2>					
+	</div>
+	
+	<div class="faq">					
+		<h2 class="question">Service XYZ is not being completed at all, but others are. How come?</h2>
+		<h2 class="answer">The plugin cannot infer types of synthetic services - services which are dynamically injected during runtime. For those cases, there's a preference page called <b>Services</b> where the id/class mapping can be stored. After that, the plugin should complete the service properly.</h2>	
+	</div>				
+	
+
+	<div class="faq">					
+		<h2 class="question">There's no additional codeassistance showing up, what can i do?</h2>
+		<h2 class="answer">The plugin indexes services and annotation during the build process. Try to clean the project (<span class="eclipsehint">project -> clean</span>). If it's still not working, check if the project has a Symfony nature.</h2>					
+	</div>
+	
+	<div class="faq">					
+		<h2 class="question">Still no code assist, what now?</h2>
+		<h2 class="answer">Check your build-path - <span class="eclipsehint"> project -> properties -> PHP build path</span> - and ensure that all your source folders are in the build path. Also make sure that none of your sourcefolders are excluded.</h2>					
+	</div>
+
+	<div class="faq">					
+		<h2 class="question">The plugin broke the built in PHP code completion!?!</h2>
+		<h2 class="answer">Sorry about that ;) To check that it's really the plugins fault, first remove the symfony nature, clean your project and try again. If you're getting code assist, it's probably the plugin causing it. If not, you're build-path is probably misconfigured.</h2>
+	</div>
+	
+	<div class="faq">					
+		<h2 class="question">Okay, it seems the plugin broke it, how can i figure out what's wrong?</h2>
+		<h2 class="answer">Eclipse can be started with various debugging options. This can be turned on/off for each installed plugin independently. To debug the symfony plugin, create a file called <span class="code">.options</span> in your Eclipse installation folder. The file should contain the following lines:
+			
+			<p class="code">							
+				com.dubture.symfony.core/debug=true<br/>
+				com.dubture.symfony.index/debug=true<br/>
+				com.dubture.symfony.ui/debug=true<br/>
+			</p>
+			
+			Then restart eclipse from the commandline with these flags: <span class="code">eclipse -debug .options</span>						
+			<p>Try to reproduce the problem and monitor the commandline - please provide these stacktraces in your github issues.</p>
+			</h2>
+	</div>
+	
+	<div class="faq">					
+		<h2 class="question">How do i know which version of the plugin is installed?</h2>
+		<h2 class="answer"> <span class="eclipsehint">Eclipse(Mac) / Help(Windows/Linux) -> About Eclipse -> SDK -> Installation Details -> Plugins </span> lists all installed plugins and their version. Note that the Symfony eclipse Feature actually consists of multiple plugins listed on that page.</h2>	
+	</div>				
+</div>			
