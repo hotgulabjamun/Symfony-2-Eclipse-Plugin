@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.dubture.symfony.feature_1.0.47.201112051051.jar" id="com.dubture.symfony.feature" version="1.0.47.201112051051">
+   <feature url="features/com.dubture.symfony.feature_1.0.47.201112061018.jar" id="com.dubture.symfony.feature" version="1.0.47.201112061018">
       <category name="Symfony"/>
    </feature>
    <feature url="features/org.dadacoalition.yedit_0.0.12.jar" id="org.dadacoalition.yedit" version="0.0.12">
