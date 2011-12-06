@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.dubture.symfony.feature_1.0.47.201112061355.jar" id="com.dubture.symfony.feature" version="1.0.47.201112061355">
-      <category name="Symfony"/>
-   </feature>
    <feature url="features/org.dadacoalition.yedit_0.0.12.jar" id="org.dadacoalition.yedit" version="0.0.12">
       <category name="YEdit"/>
    </feature>
    <feature url="features/org.eclipse.php_3.0.0.201112061224.jar" id="org.eclipse.php" version="3.0.0.201112061224">
       <category name="PHP Development Tools"/>
    </feature>
-   <feature url="features/com.dubture.pdt.feature_1.0.4.201112061224.jar" id="com.dubture.pdt.feature" version="1.0.4.201112061224">
+   <feature url="features/com.dubture.symfony.feature_1.0.47.201112061850.jar" id="com.dubture.symfony.feature" version="1.0.47.201112061850">
+      <category name="Symfony"/>
+   </feature>
+   <feature url="features/com.dubture.pdt.feature_1.0.5.201112061850.jar" id="com.dubture.pdt.feature" version="1.0.5.201112061850">
       <category name="PDT Extensions"/>
    </feature>
    <category-def name="Symfony" label="Symfony">
